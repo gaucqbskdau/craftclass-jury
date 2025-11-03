@@ -12,6 +12,7 @@ export function Navigation() {
 
   const isActive = (path: string) => pathname === path;
 
+  // Navigation links configuration
   const navLinks = [
     { href: "/", label: "Home" },
     { href: "/judge/score", label: "Score Works" },
