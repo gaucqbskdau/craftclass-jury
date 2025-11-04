@@ -10,7 +10,9 @@ import {ZamaEthereumConfig} from "@fhevm/solidity/config/ZamaConfig.sol";
 contract FHECraftJury is ZamaEthereumConfig {
     // ============ Enums ============
     
+    // Work categories for craft classification
     enum Category { Leather, Wood, Mixed }
+    // Award tiers for competition results
     enum AwardTier { None, Bronze, Silver, Gold }
     
     // ============ Structs ============
