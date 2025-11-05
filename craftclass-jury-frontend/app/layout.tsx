@@ -3,6 +3,7 @@ import { Inter, Sora } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./providers";
 
+// Font configuration for the application
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const sora = Sora({ subsets: ["latin"], variable: "--font-sora" });
 

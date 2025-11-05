@@ -11,6 +11,10 @@ A decentralized craft competition platform built with Fully Homomorphic Encrypti
 - **Admin Dashboard**: Manage groups, works, and publish awards
 - **Public Results**: Transparent display of final competition results
 
+## Architecture
+
+The platform consists of two main components: smart contracts for on-chain logic and a Next.js frontend for user interaction.
+
 ## Project Structure
 
 ```
