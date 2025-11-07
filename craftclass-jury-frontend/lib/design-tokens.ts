@@ -163,6 +163,7 @@ export const designTokens = {
       fast: "150ms",
       base: "200ms",
       slow: "300ms",
+      slower: "500ms",
     },
     timing: {
       easeIn: "cubic-bezier(0.4, 0, 1, 1)",
