@@ -14,10 +14,14 @@ export function WalletButton() {
     return `${addr.slice(0, 6)}...${addr.slice(-4)}`;
   };
 
-  const copyAddress = () => {
+  const copyAddress = async () => {
     if (account) {
-      navigator.clipboard.writeText(account);
-      // Could add a toast notification here
+      try {
+        await navigator.clipboard.writeText(account);
+        // Could add a toast notification here
+      } catch (err) {
+        console.error("Failed to copy address:", err);
+      }
     }
   };
 
