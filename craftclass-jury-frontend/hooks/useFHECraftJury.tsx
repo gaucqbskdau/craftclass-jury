@@ -32,7 +32,7 @@ export function useFHECraftJury(provider?: Eip1193Provider, chainId?: number | n
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [error, setError] = useState<Error | null>(null);
 
-  // Initialize contract
+  // Initialize contract instance
   useEffect(() => {
     if (!provider || !chainId) {
       setContract(null);
