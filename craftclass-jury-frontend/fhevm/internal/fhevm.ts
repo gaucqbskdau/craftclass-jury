@@ -25,7 +25,7 @@ export class FhevmAbortError extends Error {
   }
 }
 
-// Get chain ID from provider
+// Resolve chain ID from provider (supports both EIP-1193 and RPC URL)
 async function resolveChainId(
   provider: Eip1193Provider | string
 ): Promise<number> {
