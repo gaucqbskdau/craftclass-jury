@@ -18,6 +18,7 @@
     "react-dom": "^19.0.0",
     "lucide-react": "^0.460.0"
   },
+  "_comment": "FHEVM dependencies updated to latest compatible versions",
   "devDependencies": {
     "@fhevm/mock-utils": "0.3.0-1",
     "@types/node": "^20",
