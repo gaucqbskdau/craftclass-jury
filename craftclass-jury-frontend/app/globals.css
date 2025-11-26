@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f9f9f9;
+  --text-primary: #1a1a1a;
+  --text-secondary: #606060;
+  --border-color: #e0e0e0;
+  --primary: #8b4513;
+  --primary-hover: #703811;
+  --accent: #b5a642;
+  --success: #228b22;
+}
+
+.dark {
+  --bg-primary: #1a1a1a;
+  --bg-secondary: #282828;
+  --text-primary: #f9f9f9;
+  --text-secondary: #c0c0c0;
+  --border-color: #404040;
+  --primary: #d99e74;
+  --primary-hover: #c88d63;
+  --accent: #d9ce80;
+  --success: #68ba68;
+}
+
+@layer base {
+  * {
+    @apply border-[var(--border-color)];
+  }
+  
+  body {
+    @apply bg-[var(--bg-primary)] text-[var(--text-primary)];
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
